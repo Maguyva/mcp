@@ -1,0 +1,20 @@
+node_modules/
+dist/
+
+# Environment and secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# npm
+*.tgz

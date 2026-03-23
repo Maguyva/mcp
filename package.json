@@ -1,0 +1,46 @@
+{
+  "name": "@maguyva/mcp",
+  "version": "1.0.3",
+  "description": "MCP server for Maguyva — code intelligence with semantic, structural, and text search across your codebase",
+  "type": "module",
+  "bin": {
+    "maguyva-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx src/**/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "eventsource-parser": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maguyva/mcp.git"
+  },
+  "homepage": "https://maguyva.ai",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "maguyva",
+    "code-intelligence",
+    "claude",
+    "model-context-protocol"
+  ]
+}
