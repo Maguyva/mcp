@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "maguyva": {
+      "url": "https://maguyva.tools/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MAGUYVA_API_KEY}"
+      }
+    }
+  }
+}
